@@ -371,7 +371,7 @@ for name, ctr, width in [('f1065c', 10.65, 0.53),
 # LSST bandpasses
 lsst_meta = {'filterset': 'lsst',
              'dataurl': ('https://github.com/lsst/throughputs/tree/'
-                         '7632edaa9e93d06576e34a065ea4622de8cc48d0/baseline'),
+                         'main/baseline'),
              'retrieved': '16 Nov 2016',
              'description': 'LSST baseline total throughputs, v1.1.'}
 for letter in ['u', 'g', 'r', 'i', 'z', 'y']:
