@@ -237,6 +237,8 @@ def _download_file(remote_url, target):
                 except ValueError:
                     pass
 
+            if "data/bandpasses/lsst" in remote_url:
+                remote_url = remote_url.replace("https://sncosmo.github.io/data/bandpasses/lsst/", "https://raw.githubusercontent.com/lsst/throughputs/refs/heads/main/baseline/")
             dlmsg = "Downloading {0}".format(remote_url)
             with ProgressBarOrSpinner(size, dlmsg) as p:
                 bytes_read = 0
